@@ -22,3 +22,11 @@ $ psql
 ```
 $ psql -U postgres
 ```
+
+
+## MSSQL Commands
+
+```
+[connect to the sql server command line in docker container]
+/opt/mssql-tools/bin/sqlcmd -S 192.168.1.10 -U sa
+```
