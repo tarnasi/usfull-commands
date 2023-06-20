@@ -37,6 +37,8 @@ $ psql -U postgres
 ```
 [MSSQL]
 Data Source=localhost,1433;Initial Catalog=mahdekodak;Persist Security Info=True;User ID=sa;Password=***********
+- for asp.net local connection
+Data Source=DB_SERVER;Initial Catalog=DB_NAME;User ID=DB_USER;Password=DB_PASSWORD;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False
 
 [Postgres]
 
