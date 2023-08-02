@@ -49,4 +49,7 @@ Data Source=DB_SERVER;Initial Catalog=DB_NAME;User ID=DB_USER;Password=DB_PASSWO
 ## Angular
 
 - Change package manager (global)
+
+```bash
 ng config -g cli.packageManager yarn
+```
