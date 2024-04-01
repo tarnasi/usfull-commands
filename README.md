@@ -53,3 +53,11 @@ Data Source=DB_SERVER;Initial Catalog=DB_NAME;User ID=DB_USER;Password=DB_PASSWO
 ```bash
 ng config -g cli.packageManager yarn
 ```
+
+# Ubuntu git error insuffisante to .git/object
+```bash
+cd /path/to/repo/.git
+sudo chgrp -R groupname .
+sudo chmod -R g+rwX .
+sudo find . -type d -exec chmod g+s '{}' +
+```
