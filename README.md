@@ -1,5 +1,10 @@
 # usfull-commands
 
+## Find a port and kill the process
+```
+windows: netstat -a -o -n | findstr :8999
+windows: taskkill /PID [PID] /F
+```
 
 ## Postgres Connection commands
 
