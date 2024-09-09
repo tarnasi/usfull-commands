@@ -71,13 +71,14 @@ sudo find . -type d -exec chmod g+s '{}' +
 # Docker Pipline for using in Docker Hub or any server
 
 Pipline
-
+```
 1- Create a Dockerfile
 2- Create new Image from Dockerfile
 3- Image should have tag (version)
-4- docker create ```docker build -t my-app:1.0.0 .```
+4- docker create [docker build -t my-app:1.0.0 .]
 5- Create new Tag based on version
-     - ```docker tag my-app:1.0.0 saxonsoftware/my-app:2.0.0```
-6- User for sending data to docker hub ```docker push saxonsoftware/my-app:2.0.0```
+     - [docker tag my-app:1.0.0 saxonsoftware/my-app:2.0.0]
+6- User for sending data to docker hub [docker push saxonsoftware/my-app:2.0.0]
 
-Use ```docker login``` or Docker desktop for login into docker for access to push and pull
+Use [docker login] or Docker desktop for login into docker for access to push and pull
+```
