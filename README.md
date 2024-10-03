@@ -7,6 +7,21 @@ windows: taskkill /PID [PID] /F
 ```
 
 ## Postgres Connection commands
+- ```SELECT setval(pg_get_serial_sequence('your_table', 'id'), 1001);```
+- ```SELECT nextval(pg_get_serial_sequence('your_table', 'id'));```
+```
+-- Find the sequence for the `id` column in the `users` table
+SELECT pg_get_serial_sequence('users', 'id');
+
+-- Get the current maximum `id` value
+SELECT MAX(id) FROM users;
+
+-- Set the sequence to start from a higher number (e.g., 1001)
+SELECT setval(pg_get_serial_sequence('users', 'id'), 1001);
+
+-- Verify the sequence
+SELECT nextval(pg_get_serial_sequence('users', 'id'));
+```
 
 ### Debian based systems like Ubuntu:
 
@@ -56,7 +71,7 @@ Data Source=DB_SERVER;Initial Catalog=DB_NAME;User ID=DB_USER;Password=DB_PASSWO
 - Change package manager (global)
 
 ```bash
-ng config -g cli.packageManager yarn
+ng config -g cli.package manager yarn
 ```
 
 # Ubuntu git error insuffisante to .git/object
@@ -64,11 +79,11 @@ ng config -g cli.packageManager yarn
 cd /path/to/repo/.git
 sudo chgrp -R groupname .
 sudo chmod -R g+rwX .
-sudo find . -type d -exec chmod g+s '{}' +
+sudo find. -type d -exec chmod g+s '{}' +
 ```
 
 
-# Docker Pipline for using in Docker Hub or any server
+# Docker Pipeline for using in Docker Hub or any server
 
 Pipline
 ```
