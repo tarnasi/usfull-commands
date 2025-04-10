@@ -1,5 +1,14 @@
 # usfull-commands
 
+## How fox PORT permission denied
+```sh
+> net stop winnat
+> netsh int ipv4 set dynamic tcp start=49152 num=16384
+> netsh int ipv6 set dynamic tcp start=49152 num=16384
+> net start winnat
+```
+
+
 ## Find a port and kill the process
 ```
 windows: netstat -a -o -n | findstr :8999
