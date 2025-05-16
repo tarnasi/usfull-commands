@@ -1,6 +1,6 @@
 # usfull-commands
 
-## How fox PORT permission denied
+## How fix PORT permission denied
 ```sh
 > net stop winnat
 > netsh int ipv4 set dynamic tcp start=49152 num=16384
